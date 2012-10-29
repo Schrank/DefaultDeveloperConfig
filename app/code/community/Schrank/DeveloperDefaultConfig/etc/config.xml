@@ -10,7 +10,6 @@
             <schrank_developerdefaultconfig_setup>
                 <setup>
                     <module>Schrank_DeveloperDefaultConfig</module>
-                    <class>Mage_Core_Model_Resource_Setup</class>
                 </setup>
                 <connection>
                     <use>core_setup</use>
