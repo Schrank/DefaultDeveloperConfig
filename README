@@ -8,3 +8,4 @@ Installed a fresh magento, everytime the same procedure:
 * disable merge of js files (to avoid problems in the future)
 * disable merge of css files (to avoid problems in the future)
 * run all indexer
+* set all admin notifications as read
