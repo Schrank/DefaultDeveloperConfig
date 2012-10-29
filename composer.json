@@ -1,0 +1,14 @@
+{
+   "name": "Schrank/DefaultDeveloperConfig",
+   "type": "magento-module",
+   "homepage": "https://github.com/Schrank/DefaultDeveloperConfig",
+   "authors": [
+        {
+            "name": "Fabian Blechschmidt",
+            "email": "blechschmidt@fabian-blechschmidt.de"
+        }
+   ],
+   "require": {
+      "magento-hackathon/magento-composer-installer": "dev-master"
+   }
+}
