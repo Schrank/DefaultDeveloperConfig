@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Schrank_DeveloperDefaultConfig>
-            <version>0.1.2</version>
+            <version>0.1.3</version>
         </Schrank_DeveloperDefaultConfig>
     </modules>
     <global>
@@ -33,4 +33,15 @@
             </css>
         </dev>
     </default>
+    <adminhtml>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <adminnotification>
+                        <type>disabled</type>
+                    </adminnotification>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </adminhtml>
 </config>
