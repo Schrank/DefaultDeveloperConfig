@@ -31,6 +31,11 @@
             <css>
                 <merge_css_files>0</merge_css_files>
             </css>
+            <admin>
+                <security>
+                    <session_cookie_lifetime>36000</session_cookie_lifetime>
+                </security>
+            </admin>
         </dev>
     </default>
     <adminhtml>
