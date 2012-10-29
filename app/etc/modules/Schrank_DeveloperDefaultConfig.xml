@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Schrank_DeveloperDefaultConfig>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Schrank_DeveloperDefaultConfig>
+    </modules>
+</config>
