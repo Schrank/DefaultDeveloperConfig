@@ -7,7 +7,7 @@
  * @package    Schrank_DeveloperDefaultConfig
  * @license    http://www.ikonoshirt.de/stuff/licenses/beerware-fabian.txt
  * @link       https://github.com/Schrank/DefaultDeveloperConfig
- * @since      File available since Release 0.1.3
+ * @since      File available since Release 0.1.2
  */
 $collection = Mage::getModel('adminnotification/inbox')->getCollection();
 foreach ($collection as $notification) {

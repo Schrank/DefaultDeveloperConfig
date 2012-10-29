@@ -13,9 +13,6 @@
  * @link       https://github.com/Schrank/DefaultDeveloperConfig
  * @since      File available since Release 0.1.3
  */
-$observer = Mage::getModel('adminnotification/observer');
-$observer->preDispatch(new Varien_Event_Observer());
-
 $collection = Mage::getModel('adminnotification/inbox')->getCollection();
 foreach ($collection as $notification) {
     /* @var $notification Mage_AdminNotification_Model_Inbox */
