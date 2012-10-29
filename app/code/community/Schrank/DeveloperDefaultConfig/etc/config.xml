@@ -11,9 +11,6 @@
                 <setup>
                     <module>Schrank_DeveloperDefaultConfig</module>
                 </setup>
-                <connection>
-                    <use>core_setup</use>
-                </connection>
             </schrank_developerdefaultconfig_setup>
         </resources>
     </global>
