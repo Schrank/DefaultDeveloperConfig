@@ -1,15 +1,15 @@
 body {
 	font:12px/18px "Arial", sans-serif;
-	background:#424242 url(images/site-background.png) repeat-x center top;
+	background:#424242 url(../images/site-background.png) repeat-x center top;
 	color:white;
 }
 
 body.produkt {
-	background-image: url(images/site-background-big.png);
+	background-image: url(../images/site-background-big.png);
 }
 
 body.text {
-	background-image: url(images/site-background-text.png);
+	background-image: url(../images/site-background-text.png);
 }
 
 a {
@@ -43,6 +43,17 @@ h3 {
 	font-weight:600;
 }
 
+#header-sec-nav ul li {
+    display: inline;
+    padding-right:15px;
+    margin-right:13px;
+    background:transparent url(../images/header-sec-nav-separator.png) right top no-repeat;
+}
+
+#header-sec-nav ul li.last {
+    background:none;
+}
+
 #stage-frontpage,
 #stage-motive,
 #stage-leasing {
@@ -67,16 +78,16 @@ h3 {
 
 
 #stage-frontpage {
-	background:white url(images/bg-startseite.jpg) no-repeat left top;
+	background:white url(../images/bg-startseite.jpg) no-repeat left top;
 }
 #stage-produkt {
-	background:white url(images/bg-produkt.jpg) no-repeat left top;
+	background:white url(../images/bg-produkt.jpg) no-repeat left top;
 }
 #stage-motive {
-	background:white url(images/bg-motive.jpg) no-repeat left top;
+	background:white url(../images/bg-motive.jpg) no-repeat left top;
 }
 #stage-leasing {
-	background:white url(images/bg-leasing.jpg) no-repeat left top;
+	background:white url(../images/bg-leasing.jpg) no-repeat left top;
 }
 
 
@@ -98,7 +109,7 @@ body.produkt #navigation {
 }
 
 body.text .shadow {
-	background:transparent url(images/content-top.png) no-repeat left top;
+	background:transparent url(../images/content-top.png) no-repeat left top;
 	padding-top:10px;
 }
 
@@ -116,7 +127,7 @@ body.text .shadow {
 
 
 #content {
-	background:black url(images/content-bottom.png) no-repeat left bottom;
+	background:black url(../images/content-bottom.png) no-repeat left bottom;
 	padding-top:15px;
 	padding-bottom:30px;
 }
@@ -151,7 +162,7 @@ body.motive #content {
 	color:#9c9b9b;
 	font-weight: 600;
 	text-decoration: none;
-	background: transparent url(images/mainmenu-sprite.jpg) no-repeat left top;
+	background: transparent url(../images/mainmenu-sprite.jpg) no-repeat left top;
 	text-align: center;
 	display: table;
 }
@@ -210,14 +221,14 @@ span.separator {
 }
 
 #content ul {
-	list-style-image: url(images/list-item-bullet.png);
+	list-style-image: url(../images/list-item-bullet.png);
 	padding-left:25px;
 }
 
 #content ul.large {
 	font-size:14px;
 	line-height: 21px;
-	list-style-image: url(images/list-item-bigbullet.png);
+	list-style-image: url(../images/list-item-bigbullet.png);
 }
 
 #content ul li {
@@ -238,4 +249,19 @@ img.motiv {
 	margin-right:10px;
 }.dreiARot {
 	color: #F00;
+}
+
+#content ul.iconlist {
+    list-style:none;
+    padding:0;
+}
+
+#content ul.iconlist li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+#content ul.iconlist img {
+    border:2px solid silver;
 }

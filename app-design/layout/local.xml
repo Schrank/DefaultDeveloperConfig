@@ -16,14 +16,66 @@
             </action>
         </reference>
         <reference name="header">
-            <block type="core/template" name="header.account" template="customer/header/account.phtml" />
-            <block type="cms/block" name="header.secondary-navigation">
+            <block type="core/template" name="header.account" template="customer/header/account.phtml"/>
+            <block type="page/html_wrapper" name="header.secondary-navigation">
+                <action method="setElementId"><elementId>header-sec-nav</elementId></action>
+                <block type="page/template_links" name="header.secondary-navigation.links">
+                    <action method="addLink" translate="label title">
+                        <label>Sitemap</label>
+                        <url>/sitemap</url>
+                        <title>Sitemap</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>10</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Impressum/Kontakt</label>
+                        <url>/impressum</url>
+                        <title>Impressum und Kontakt</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>20</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>AGB</label>
+                        <url>/agb</url>
+                        <title>Allgemeine Geschäftsbedingungen</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>30</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Datenschutz</label>
+                        <url>/datenschutz</url>
+                        <title>Datenschutz</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>40</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Gutscheine</label>
+                        <url>/gutscheine</url>
+                        <title>Gutscheine</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>50</position>
+                    </action>
+                </block>
+            </block>
+
+            <!-- block type="cms/block" name="header.secondary-navigation">
                 <action method="setBlockId">
                     <blockid>secondary-navigation</blockid>
                 </action>
-            </block>
+            </block -->
             <action method="insert">
                 <blockname>cart.sidebar</blockname>
+            </action>
+        </reference>
+
+        <reference name="store_language">
+            <action method="setTemplate">
+                <template>page/switch/flyout-flags.phtml</template>
             </action>
         </reference>
 
