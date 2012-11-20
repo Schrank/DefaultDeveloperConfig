@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <filename>css/reset.css</filename>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <filename>css/960.css</filename>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <filename>css/3aart.css</filename>
+            </action>
+        </reference>
+        <reference name="header">
+            <block type="core/template" name="header.account" template="customer/header/account.phtml" />
+            <block type="cms/block" name="header.secondary-navigation">
+                <action method="setBlockId">
+                    <blockid>secondary-navigation</blockid>
+                </action>
+            </block>
+            <action method="insert">
+                <blockname>cart.sidebar</blockname>
+            </action>
+        </reference>
+
+        <reference name="footer">
+            <block type="cms/block" name="footer.shipping">
+                <action method="setBlockId">
+                    <blockid>footer.shipping</blockid>
+                </action>
+            </block>
+            <block type="cms/block" name="footer.payments">
+                <action method="setBlockId">
+                    <blockid>footer.payments</blockid>
+                </action>
+            </block>
+            <block type="core/template" name="footer.socialnetworks" template="page/html/footer-socialnetworks.phtml">
+                <block type="core/template" name="header.facebook"
+                       template="page/html/footer-socialnetworks/youtube.phtml"/>
+                <block type="core/template" name="header.facebook"
+                       template="page/html/footer-socialnetworks/facebook.phtml"/>
+            </block>
+
+            <action method="insert">
+                <blockname>header.secondary-navigation</blockname>
+            </action>
+        </reference>
+    </default>
+</layout>

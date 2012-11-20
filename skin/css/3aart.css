@@ -1,0 +1,241 @@
+body {
+	font:12px/18px "Arial", sans-serif;
+	background:#424242 url(images/site-background.png) repeat-x center top;
+	color:white;
+}
+
+body.produkt {
+	background-image: url(images/site-background-big.png);
+}
+
+body.text {
+	background-image: url(images/site-background-text.png);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a.active,
+a:hover {
+	color: #d30612;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 400;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+h1 {
+	font-size:25px;
+	line-height: 30px;
+}
+
+h2 {
+	font-size: 22px;
+	line-height: 27px;
+}
+
+h3 {
+	font-weight:600;
+}
+
+#stage-frontpage,
+#stage-motive,
+#stage-leasing {
+	height:277px;
+}
+
+#stage-produkt {
+	height:505px;
+	border-bottom:30px solid black;
+}
+
+#stage-video {
+	width:100%;
+	text-align: center;
+	margin-top:42px;
+}
+
+#stage-text {
+	padding-top:35px;
+	color: black;
+}
+
+
+#stage-frontpage {
+	background:white url(images/bg-startseite.jpg) no-repeat left top;
+}
+#stage-produkt {
+	background:white url(images/bg-produkt.jpg) no-repeat left top;
+}
+#stage-motive {
+	background:white url(images/bg-motive.jpg) no-repeat left top;
+}
+#stage-leasing {
+	background:white url(images/bg-leasing.jpg) no-repeat left top;
+}
+
+
+#logo {
+	height:100px;
+	padding-top:30px;
+}
+
+#navigation {
+	height: 114px;
+}
+
+body.produkt #navigation {
+	height:132px;
+}
+
+.shadow {
+	box-shadow: 0px 0px 50px black;
+}
+
+body.text .shadow {
+	background:transparent url(images/content-top.png) no-repeat left top;
+	padding-top:10px;
+}
+
+.box {
+	background-color:#111111;
+	margin-top:15px;
+	margin-bottom:25px;
+	padding-top:25px;
+	padding-bottom:15px;
+}
+
+#content, #footer {
+	background-color:black;
+}
+
+
+#content {
+	background:black url(images/content-bottom.png) no-repeat left bottom;
+	padding-top:15px;
+	padding-bottom:30px;
+}
+
+body.motive #content {
+	padding-top:30px;
+}
+
+#footer {
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align: center;
+}
+
+.mainnavigation {
+	margin-left:65px;
+}
+.mainnavigation li {
+	float:left;
+	margin-right: 50px;
+}
+
+.mainnavigation li:last-child {
+	margin-right:0;
+}
+
+.mainnavigation li a:hover,
+.mainnavigation li a {
+	width:65px;
+	height:85px;
+	text-transform: uppercase;
+	color:#9c9b9b;
+	font-weight: 600;
+	text-decoration: none;
+	background: transparent url(images/mainmenu-sprite.jpg) no-repeat left top;
+	text-align: center;
+	display: table;
+}
+
+.mainnavigation li a.active,
+.mainnavigation li a:hover {
+	color:#d30612;
+}
+
+.mainnavigation li a span {
+	vertical-align: bottom;
+	display: table-cell
+}
+
+.mainnavigation a#link-ueberuns {
+	background-position: 0 0;
+}
+.mainnavigation a#link-produkt {
+	background-position: -65px 0;
+}
+.mainnavigation a#link-motive {
+	background-position: -130px 0;
+}
+.mainnavigation a#link-leasing {
+	background-position: -195px 0;
+}
+
+p {
+	margin-bottom:10px;
+}
+
+p.more {
+	margin-top:10px;
+}
+
+p.large {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+p.notice {
+	background-color:#c00;
+	color: white;
+	padding:3px;
+}
+
+.box p {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+span.separator {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#content ul {
+	list-style-image: url(images/list-item-bullet.png);
+	padding-left:25px;
+}
+
+#content ul.large {
+	font-size:14px;
+	line-height: 21px;
+	list-style-image: url(images/list-item-bigbullet.png);
+}
+
+#content ul li {
+	margin-bottom:10px;
+	padding-left:15px;
+	padding-right:0px;
+}
+
+#content ul.large li {
+	padding-right: 0;
+}
+
+#content ul.narrow li {
+	margin-bottom: 0;
+}
+
+img.motiv {
+	margin-right:10px;
+}.dreiARot {
+	color: #F00;
+}
