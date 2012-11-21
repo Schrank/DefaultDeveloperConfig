@@ -1,4 +1,5 @@
-<ul class="social-networks">
-    <li><?php echo $this->getChildHtml( 'youtube' ) ?></li>
-    <li><?php echo $this->getChildHtml( 'facebook' ) ?></li>
+<ul class="social-networks iconlist">
+    <li><a href="#" title="Youtube"><img src="<?php echo $this->getSkinUrl( 'images/icons/youtube.png' ); ?>" title="3aART bei Youtube"></a></li>
+    <li><a href="http://www.facebook.com/3aART" title="Facebook"><img src="<?php echo $this->getSkinUrl( 'images/icons/facebook.png' ); ?>" title="3aART bei Facebook"></a></li>
+    <li style="position:relative"><?php echo $this->getChildHtml( 'footer.socialnetworks.facebook' ) ?></li>
 </ul>

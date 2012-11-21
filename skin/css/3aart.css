@@ -220,12 +220,12 @@ span.separator {
 	padding-right:10px;
 }
 
-#content ul {
+#content ul.smallbullet {
 	list-style-image: url(../images/list-item-bullet.png);
 	padding-left:25px;
 }
 
-#content ul.large {
+#content ul.largebullet {
 	font-size:14px;
 	line-height: 21px;
 	list-style-image: url(../images/list-item-bigbullet.png);
@@ -247,7 +247,9 @@ span.separator {
 
 img.motiv {
 	margin-right:10px;
-}.dreiARot {
+}
+
+.dreiARot {
 	color: #F00;
 }
 

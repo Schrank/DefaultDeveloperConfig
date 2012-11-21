@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <layout>
     <default>
+        <update handle="page_one_column" />
         <reference name="head">
             <action method="addItem">
                 <type>skin_css</type>
@@ -91,9 +92,9 @@
                 </action>
             </block>
             <block type="core/template" name="footer.socialnetworks" template="page/html/footer-socialnetworks.phtml">
-                <block type="core/template" name="header.facebook"
+                <block type="core/template" name="footer.socialnetworks.youtube"
                        template="page/html/footer-socialnetworks/youtube.phtml"/>
-                <block type="core/template" name="header.facebook"
+                <block type="core/template" name="footer.socialnetworks.facebook"
                        template="page/html/footer-socialnetworks/facebook.phtml"/>
             </block>
 

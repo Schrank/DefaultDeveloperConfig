@@ -24,11 +24,13 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<?php if(count($this->getStores())>1): ?>
-<div class="form-language">
+<div id="language_flyout">
+<?php if(count($this->getStores())>0): ?>
+<ul class="form-language">
     <?php foreach ($this->getStores() as $_lang): ?>
-    <?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? ' selected="selected"' : ''; if($_selected) continue; ?>
-    <a href="<?php echo $_lang->getCurrentUrl() ?>" style="width:16px; height:11px; display:block; background: transparent url('<?php echo $this->getSkinUrl('images/flags/'.$_lang->getCode().'.png') ?>') left top no-repeat; padding-left:20px;"<?php echo $_selected ?>><?php echo $_lang->getName(); ?></a>
+    <?php /** $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? ' selected="selected"' : ''; if($_selected) continue;  */ ?>
+   <li><a href="<?php echo $_lang->getCurrentUrl() ?>" style="width:16px; height:11px; display:block; background: transparent url('<?php echo $this->getSkinUrl('images/flags/'.$_lang->getCode().'.png') ?>') left top no-repeat; padding-left:20px;"<?php /** echo $_selected */ ?>><?php echo $_lang->getName(); ?></a></li>
     <?php endforeach; ?>
 </div>
 <?php endif; ?>
+</div>
