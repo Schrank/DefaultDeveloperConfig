@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <ThreeAArt_PageTemplates>
+            <version>1.0.0</version>
+        </ThreeAArt_PageTemplates>
+    </modules>
+    <global>
+        <page>
+            <layouts>
+                <one_column module="page" translate="label">
+                    <label>1 column no stage</label>
+                </one_column>
+                <one_column_small_stage module="page" translate="label">
+                    <label>1 column small stage</label>
+                    <template>page/1columns-smallstage.phtml</template>
+                    <layout_handle>page_one_column_small_stage</layout_handle>
+                </one_column_small_stage>
+                <one_column_big_stage module="page" translate="label">
+                    <label>1 column big stage</label>
+                    <template>page/1columns-bigstage.phtml</template>
+                    <layout_handle>page_one_column_big_stage</layout_handle>
+                </one_column_big_stage>
+            </layouts>
+        </page>
+
+    </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <ThreeAArt_PageTemplates>
+                    <files>
+                        <default>ThreeAArt_PageTemplates.csv</default>
+                    </files>
+                </ThreeAArt_PageTemplates>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
