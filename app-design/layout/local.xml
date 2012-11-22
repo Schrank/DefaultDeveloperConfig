@@ -63,14 +63,95 @@
                     </action>
                 </block>
             </block>
+            <block type="page/html_wrapper" name="header.main-navigation">
+                <action method="setElementId"><elementId>header-main-nav</elementId></action>
+                <block type="core/template" name="header.secondary-navigation.links" template="page/html/header/main-navigation.phtml" />
+                <!-- block type="page/template_links" name="header.secondary-navigation.links">
+                    <action method="addLinkBlock" translate="label title">
+                        <label>Home</label>
+                        <url>/</url>
+                        <title>Home</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>10</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Motive</label>
+                        <url>/motive</url>
+                        <title>Motive</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>20</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Mein Motiv</label>
+                        <url>/mein-motiv</url>
+                        <title>Mein Motiv</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>30</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Leasing</label>
+                        <url>/leasing</url>
+                        <title>Leasing</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>40</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Produkt</label>
+                        <url>/produkt</url>
+                        <title>Produkt</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>50</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Zubehör</label>
+                        <url>/zubehoer</url>
+                        <title>Zubehör</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>60</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Über uns</label>
+                        <url>/about-us</url>
+                        <title>Über uns</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>70</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Service</label>
+                        <url>/service</url>
+                        <title>Service</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>80</position>
+                    </action>
+                    <action method="addLink" translate="label title">
+                        <label>Login</label>
+                        <url helper="customer/getLoginUrl"></url>
+                        <title>Login</title>
+                        <prepare/>
+                        <urlParams/>
+                        <position>90</position>
+                    </action>
+                </block -->
 
+            </block>
             <!-- block type="cms/block" name="header.secondary-navigation">
                 <action method="setBlockId">
                     <blockid>secondary-navigation</blockid>
                 </action>
             </block -->
+        </reference>
+
+        <reference name="header.account">
             <action method="insert">
-                <blockname>cart.sidebar</blockname>
+                <blockname>cart_sidebar</blockname>
             </action>
         </reference>
 

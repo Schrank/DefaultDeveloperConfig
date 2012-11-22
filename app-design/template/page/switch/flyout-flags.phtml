@@ -1,9 +1,7 @@
 <?php
 /**
  * Magento
- *
  * NOTICE OF LICENSE
- *
  * This source file is subject to the Academic Free License (AFL 3.0)
  * that is bundled with this package in the file LICENSE_AFL.txt.
  * It is also available through the world-wide-web at this URL:
@@ -11,26 +9,36 @@
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@magentocommerce.com so we can send you a copy immediately.
- *
  * DISCLAIMER
- *
  * Do not edit or add to this file if you wish to upgrade Magento to newer
  * versions in the future. If you wish to customize Magento for your
  * needs please refer to http://www.magentocommerce.com for more information.
- *
  * @category    design
  * @package     base_default
  * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
+
 ?>
 <div id="language_flyout">
-<?php if(count($this->getStores())>0): ?>
+<?php if( count( $this->getStores() ) > 0 ): ?>
 <ul class="form-language">
-    <?php foreach ($this->getStores() as $_lang): ?>
-    <?php /** $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? ' selected="selected"' : ''; if($_selected) continue;  */ ?>
-   <li><a href="<?php echo $_lang->getCurrentUrl() ?>" style="width:16px; height:11px; display:block; background: transparent url('<?php echo $this->getSkinUrl('images/flags/'.$_lang->getCode().'.png') ?>') left top no-repeat; padding-left:20px;"<?php /** echo $_selected */ ?>><?php echo $_lang->getName(); ?></a></li>
+    <li><a href="#"
+           style="display:block; width:16px; height:11px;
+                   background: transparent url('<?php echo $this->getSkinUrl( 'images/flags/' . $this->getCurrentStoreCode() . '.png' ) ?>') left top no-repeat;
+                   padding-left:20px; margin-bottom:10px;"<?php /** echo $_selected */ ?>><span>GERMAN <?php /** @TODO Bei aktuellem Store noch StoreNamen ausgeben */ ?></span></a>
+    </li>
+    <?php foreach( $this->getStores() as $_lang ): ?>
+    <?php $_selected = ( $_lang->getId() == $this->getCurrentStoreId() ) ? ' selected="selected"' : '';
+    if( $_selected ) {
+        continue;
+    } ?>
+    <li><a href="<?php echo $_lang->getCurrentUrl() ?>"
+           style="display:block; width:16px; height:11px;
+                   background: transparent url('<?php echo $this->getSkinUrl( 'images/flags/' . $_lang->getCode() . '.png' ) ?>') left top no-repeat;
+                   padding-left:20px; margin-bottom:10px;"<?php /** echo $_selected */ ?>><span><?php echo $_lang->getName(); ?></span></a>
+    </li>
     <?php endforeach; ?>
-</div>
+</ul>
 <?php endif; ?>
 </div>

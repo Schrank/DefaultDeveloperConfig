@@ -19,8 +19,10 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<div class="container_22 alpha omega">
-    <div class="grid_5 prefix_2">
+
+
+<div class="container_22 alpha omega" id="footer">
+    <div class="grid_6 prefix_1 separator">
         <h3>Versand</h3>
         <ul class="iconlist">
             <li><img src="<?php echo $this->getSkinUrl( 'images/icons/dhl.png' ); ?>" title="DHL"></li>
@@ -28,7 +30,7 @@
         <?php /**  echo $this->getChildHtml('footer.shipping') */ ?>
 
     </div>
-    <div class="grid_8">
+    <div class="grid_8 separator">
         <?php echo $this->getChildHtml( 'footer.payments' ) ?>
         <h3>Zahlungsmöglichkeiten</h3>
         <ul class="iconlist">
@@ -39,17 +41,13 @@
             <li><img src="<?php echo $this->getSkinUrl( 'images/icons/vorkasse.png' ); ?>" title="Vorkasse"></li>
         </ul>
     </div>
-    <div class="grid_5 suffix_2">
-        <h3>Social Networks</h3>
+    <div class="grid_6 suffix_1">
+        <h3>Soziale Netzwerke</h3>
         <?php echo $this->getChildHtml( 'footer.socialnetworks' ) ?>
     </div>
     <div class="clear"></div>
-</div>
-<div class="container_22 alpha omega" id="footer">
-    <div class="grid_22">
-        <p>
-        <address><?php echo $this->getCopyright() ?></address>
-        <?php echo $this->getChildHtml( 'header.secondary-navigation' ); ?></p>
+    <div class="grid_22 centered" id="copyright">
+        <p><address style="display:inline; "><?php echo $this->getCopyright() ?></address> <?php echo $this->getChildHtml( 'header.secondary-navigation' ); ?></p>
     </div>
     <div class="clear"></div>
 </div>

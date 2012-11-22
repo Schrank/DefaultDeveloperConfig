@@ -29,15 +29,14 @@
 ?>
 
 <div class="container_22" id="header">
-    <div class="grid_2 prefix_2">
+    <div class="grid_2 prefix_1">
         <?php echo $this->getChildHtml('store_language') ?>
     </div>
-    <div class="grid_14">
+    <div class="grid_12">
         <?php echo $this->getChildHtml('header.secondary-navigation') ?>
     </div>
-    <div class="grid_4">
+    <div class="grid_6 suffix_1">
         <?php echo $this->getChildHtml('header.account') ?>
-        <?php echo $this->getChildHtml('cart.sidebar') ?>
     </div>
     <div class="clear"></div>
 </div>
@@ -50,12 +49,9 @@
     <div class="clear"></div>
 </div>
 
-<div class="container_11" id="navigation">
-    <div class="grid_10 prefix_6">
-        <?php echo $this->getChildHtml('header.main-navigation') ?>
-    </div>
-    <div class="grid_4 prefix_2">
-        <?php echo $this->getChildHtml('header.facebook') ?>
+<div class="container_22" id="navigation">
+    <div class="grid_20 prefix_1 suffix_1">
+       <?php echo $this->getChildHtml('header.main-navigation') ?>
     </div>
     <div class="clear"></div>
 </div>
