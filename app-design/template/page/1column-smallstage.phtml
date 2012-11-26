@@ -34,38 +34,52 @@
 <?php echo $this->getChildHtml( 'after_body_start' ) ?>
 <div class="wrapper">
     <?php echo $this->getChildHtml( 'global_notices' ) ?>
-    <div class="page">
+	<div class="page">
         <?php echo $this->getChildHtml( 'header' ) ?>
-        <div class="container_22" id="small-stage">
-            <div class="grid_9 prefix_1 suffix_10" id="stage-text">
-                <h1>Leasen-Leihen-Wechseln</h1>
-                <p>Für Geschäftskunden wird ein sehr individuelles und umfangreiches Bildprogramm angeboten, welches im
-                    Wesentlichen auf einen kontinuierlichen Wechsel von Motiven ausgelegt ist. Ob Bilder durch uns
-                    finanziert, geleast oder einfach nur verliehen werden, entscheiden Sie selbst. Auch der regelmäßige
-                    Wechsel der Motive ist kein Problem – Sie entscheiden ob jährlich – halbjährlich oder sogar
-                    Quartalsweise. Steigen Sie ein in die Kunstwelt, ohne ein Vermögen zu investieren.</p>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="container_22 shadow">
-            <div class="container_22 alpha omega" id="content">
+		<div class="container_22" id="small-stage">
+			<div style="display:table">
+				<div style="display:table-cell; height:207px; vertical-align:middle;">
+					<div class="grid_20 prefix_1 suffix_1" id="stage-text">
+						<h1>Leasen-Leihen-Wechseln</h1>
 
-                <div class="grid_20 prefix_1 suffix_1 main-container col1-layout">
-                    <div class="main">
-                        <?php echo $this->getChildHtml( 'breadcrumbs' ) ?>
-                        <div class="col-main">
-                            <?php echo $this->getChildHtml( 'global_messages' ) ?>
-                            <?php echo $this->getChildHtml( 'content' ) ?>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
+						<div class="grid_6 alpha">
+							<p>Für Geschäftskunden wird ein sehr individuelles und umfangreiches Bildprogramm angeboten, welches im Wesentlichen auf einen kontinuierlichen Wechsel von Motiven ausgelegt ist. Ob Bilder durch uns finanziert, geleast oder einfach nur verliehen werden, entscheiden Sie selbst.</p>
+						</div>
+						<div class="grid_6">
+							<p>Auch der regelmäßige
+								Wechsel der Motive ist kein Problem – Sie entscheiden ob jährlich – halbjährlich oder sogar Quartalsweise. Steigen Sie ein in die Kunstwelt, ohne ein Vermögen zu investieren.</p>
+						</div>
+						<div class="grid_8 omega">
+                            <div style="position:absolute; top:-95px;">
+							<img src="<?php echo $this->getSkinUrl( 'images/sample-stage-image.png' ); ?>"/>
+                                </div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="container_22 shadow">
+		<div class="container_22 alpha omega" id="content">
+            <?php echo $this->getChildHtml( 'sub-navigation' ); ?>
+			<div class="grid_20 prefix_1 suffix_1 main-container col1-layout">
+				<div class="main">
+                    <?php echo $this->getChildHtml( 'breadcrumbs' ) ?>
+					<div class="col-main">
+                        <?php echo $this->getChildHtml( 'global_messages' ) ?>
+                        <?php echo $this->getChildHtml( 'content' ) ?>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
 
-            </div>
-            <?php echo $this->getChildHtml( 'footer' ) ?>
-        </div>
-        <?php echo $this->getChildHtml( 'before_body_end' ) ?>
-    </div>
+		</div>
+        <?php echo $this->getChildHtml( 'footer' ) ?>
+	</div>
+    <?php echo $this->getChildHtml( 'before_body_end' ) ?>
+</div>
 </div>
 <?php echo $this->getAbsoluteFooter() ?>
 </body>

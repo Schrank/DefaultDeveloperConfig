@@ -1,3 +1,6 @@
+/* Nur für Entwicklungsumgebung */
+.col-main .std { display: none }
+
 body {
 	font:12px/18px "Arial", sans-serif;
 	background:#424242 url(../images/site-background-no.png) repeat-x center top;
@@ -68,7 +71,8 @@ h3 {
 }
 
 #small-stage {
-	height:277px;
+	height:238px;
+	background:transparent url(../images/stage-background-small.png) left top no-repeat;
 }
 
 #big-stage {
@@ -83,7 +87,6 @@ h3 {
 }
 
 #stage-text {
-	padding-top:35px;
 	color:black;
 }
 
@@ -109,7 +112,7 @@ h3 {
 }
 
 #navigation {
-	height:114px;
+	height:113px;
 }
 
 body.produkt #navigation {
@@ -122,12 +125,17 @@ body.produkt #navigation {
 
 body .shadow {
 	background:transparent url(../images/content-top.png) no-repeat left top;
-	padding-top:10px;
+	/* padding-top:55px; */
+}
+
+body.smallstage .sub-navigation,
+body.bigstage .sub-navigation {
+	background-image:none;
+	padding-top:0px;
 }
 
 .box {
 	background-color:#111111;
-	margin-top:15px;
 	margin-bottom:25px;
 	padding-top:25px;
 	padding-bottom:15px;
@@ -139,7 +147,7 @@ body .shadow {
 
 #content {
 	background:black url(../images/content-bottom.png) no-repeat left bottom;
-	padding-top:15px;
+
 	padding-bottom:30px;
 }
 
@@ -279,8 +287,12 @@ span.separator {
 
 #content ul li {
 	margin-bottom:10px;
-	padding-left:15px;
-	padding-right:0px;
+	padding-left:0px;
+	padding-right:15px;
+}
+
+#content ul.iconlist li {
+	padding-left:0;
 }
 
 #content ul.large li {
@@ -349,4 +361,41 @@ ul.iconlist img {
 	padding-right:10px;
 	padding-top:4px;
 	line-height:6px;
+}
+
+aside img,
+section img {
+	margin-bottom:15px;
+	border:1px solid white;
+}
+
+aside hr.teaser {
+	border: none;
+	margin: 15px 0;
+	height:9px;
+	background: transparent url(../images/aside-separator.png)  center no-repeat;
+}
+
+.calltoaction a:before {
+	content:"» ";
+}
+
+#content nav.sub-navigation li {
+	display:inline-block;
+	padding-left:0;
+	padding-right:15px;
+	margin-right:15px;
+	border-right:1px solid white;
+}
+
+#content-slider {
+	background: transparent url(../images/referenzen-spot.png) right center no-repeat;
+	display:block;
+	height:600px;
+}
+
+.sub-navigation {
+	padding-top:15px;
+	height:37px;
+	background: black url(../images/content-top.png) left top;
 }

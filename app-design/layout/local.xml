@@ -2,6 +2,7 @@
 <layout>
     <default>
         <update handle="page_one_column" />
+        <remove name="breadcrumbs" />
         <reference name="head">
             <action method="addItem">
                 <type>skin_css</type>
@@ -148,7 +149,12 @@
                 </action>
             </block -->
         </reference>
-
+        <reference name="root">
+            <block type="page/html_wrapper" name="sub-navigation">
+                <action method="setHtmlTagName"><tagname>nav</tagname></action>
+                <action method="setElementClass"><classname>sub-navigation container_22 alpha omega</classname></action>
+            </block>
+        </reference>
         <reference name="header.account">
             <action method="insert">
                 <blockname>cart_sidebar</blockname>
