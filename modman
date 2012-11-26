@@ -1,6 +1,6 @@
-app-design/                                         app/design/frontend/threeaart/default/
-skin/                                               skin/frontend/threeaart/default
+app/design/frontend/threeaart/default               app/design/frontend/threeaart/default
+skin/frontend/threeaart/default                     skin/frontend/threeaart/default
 
-app-code/etc/ThreeAArt_PageTemplates.xml            app/etc/modules/ThreeAArt_PageTemplates.xml
-app-code/local/                                     app/code/local/ThreeAArt/PageTemplates/
-app-code/locale/de_DE/ThreeAArt_PageTemplates.csv   app/locale/de_DE/ThreeAArt_PageTemplates.csv
+app/etc/modules/ThreeAArt_PageTemplates.xml         app/etc/modules/ThreeAArt_PageTemplates.xml
+app/code/local/ThreeAArt/PageTemplates/             app/code/local/ThreeAArt/PageTemplates
+app/locale/de_DE/ThreeAArt_PageTemplates.csv        app/locale/de_DE/ThreeAArt_PageTemplates.csv
